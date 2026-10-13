@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-primary: #17136B;
+    --navy-dark: #0f0b4d;
+    --yellow-accent: #FFD400;
+    --yellow-pale: #FFF8CC;
+    --light-bg: #F4F5F8;
+    --text-main: #25254B;
+    --text-muted: #66677A;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #25254B;
+    background-color: #F4F5F8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Lora', Georgia, serif;
+  }
+}
+
+/* Tasteful, restrained drop cap for opening paragraph of major sections */
+.drop-cap::first-letter {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  float: left;
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: -0.1rem;
+  color: #17136B;
+  font-weight: 700;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f2f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #17136B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f0b4d;
+}
